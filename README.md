@@ -22,10 +22,24 @@ conda activate astra_curved
  ```bash
 conda install -c wjpalenstijn/label/curved astra-toolbox
 ```
-### **3. Install ODL and Its Dependencies**
+### **3. Install correct version of numPy**
 ```bash
-pip install numpy==1.19.5 scipy
-pip install future matplotlib click tqdm packaging
-pip install git+https://github.com/wjp/odl.git
+conda uninstall numpy
+conda install numpy=1.19.5
 ```
+This is the compatible version to python=3.9.
 
+### **3. Clone and Install ODL**
+```bash
+git clone https://github.com/wjp/odl.git astra_cyclone_binding
+cd astra_cyclone_binding
+grep -rl "np.object" . | xargs sed -i 's/np.object/object/g'
+pip install .
+```
+### **4. Verify Installation**
+Check that ASTRA and ODL are installed correctly:
+```bash
+python -c "import astra; print(astra.__version__)"
+python -c "import odl; print(odl.__version__)"
+```
+If everything went right, this should return numpy=2.1.3 and odl=1.0.0.dev0.
