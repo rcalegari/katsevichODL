@@ -29,7 +29,7 @@ conda install numpy=1.19.5
 ```
 This is the compatible version to python=3.9.
 
-### **3. Clone and Install ODL**
+### **4. Clone and Install ODL**
 ```bash
 git clone https://github.com/wjp/odl.git astra_cyclone_binding
 cd astra_cyclone_binding
