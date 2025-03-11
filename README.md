@@ -36,7 +36,7 @@ cd astra_cyclone_binding
 grep -rl "np.object" . | xargs sed -i 's/np.object/object/g'
 pip install .
 ```
-### **4. Verify Installation**
+### **5. Verify Installation**
 Check that ASTRA and ODL are installed correctly:
 ```bash
 python -c "import astra; print(astra.__version__)"
