@@ -1,15 +1,15 @@
 # KatsevichODL
 
-## 📌 Overview
-This repository implements the **Katsevich reconstruction algorithm** using the **Operator Discretization Library (ODL)** and **ASTRA Toolbox**. The Katsevich algorithm is an analytical method for **helical cone-beam computed tomography (CT)** that provides **exact and efficient** image reconstruction.
+## Overview
+This repository implements the **Katsevich reconstruction algorithm** using the **Operator Discretization Library (ODL)** and **ASTRA Toolbox**. The Katsevich algorithm is a theoretically exact method for **helical cone-beam computed tomography (CT)**.
 
-## 🚀 Features
+## Features
 - **Katsevich reconstruction algorithm** implemented within the ODL framework.
 - **Integration with ASTRA Toolbox** for efficient forward and back projections.
 - **Compatible with helical CT scan geometries**.
 - **Easily customizable** for different scanner configurations.
 
-## 🛠 Installation
+## Installation
 To set up the environment and install dependencies, follow the [Installation Guide](#installation).
 
 ```bash
