@@ -12,17 +12,17 @@ This repository implements the **Katsevich reconstruction algorithm** using the 
 ## Installation
 To set up the environment and install dependencies, follow the [Installation Guide](#installation).
 
-### **1️⃣ Create and Activate the Conda Environment**
+### **1. Create and Activate the Conda Environment**
 Note that ODL uses some deprecated methods which are not compatible with python versions beyond 3.9.
 ```bash
 conda create -n astra_curved python=3.9
 conda activate astra_curved
 ```
-### **2️⃣  Install Astra Toolbox**
+### **2.  Install Astra Toolbox**
  ```bash
 conda install -c wjpalenstijn/label/curved astra-toolbox
 ```
-### **3️⃣ Install ODL and Its Dependencies**
+### **3. Install ODL and Its Dependencies**
 ```bash
 pip install numpy==1.19.5 scipy
 pip install future matplotlib click tqdm packaging
