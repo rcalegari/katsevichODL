@@ -22,16 +22,9 @@ conda activate astra_curved
 conda install -c wjpalenstijn/label/curved astra-toolbox
 ```
 
-### **4. Clone and Install ODL**
+### **3. Clone and Install ODL From Correct Branch**
 ```bash
 git clone https://github.com/wjp/odl.git curved
 cd curved
 pip install .
 ```
-### **5. Verify Installation**
-Check that ASTRA and ODL are installed correctly:
-```bash
-python -c "import astra; print(astra.__version__)"
-python -c "import odl; print(odl.__version__)"
-```
-If everything went right, this should return numpy=2.1.3 and odl=1.0.0.dev0.
